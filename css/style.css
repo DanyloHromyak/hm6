@@ -1,0 +1,183 @@
+/* global styles */
+:focus {
+    outline: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+   padding: 60px;
+   padding-right: 60px;
+}
+
+.section-title {
+    font-family: 'Parisienne',serif;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 131px;
+    color: #D38753;
+}
+/* header */
+
+.header {
+    padding-top: 28px;
+    padding-bottom: 24px;
+}
+
+.logo {
+    display: block;
+    width: 305px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 29px;
+}
+.menu {
+    width: 991px;
+}
+
+nav {
+    width: 991px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-list {
+    list-style: none;
+    text-align: center;
+    font-family: 'Princess Sofia',serif;
+
+}
+.menu-item {
+    display: inline-block;
+    margin: 0 50px;
+    text-align: center;
+}
+
+.menu-link {
+    font-size: 36px;
+    line-height: 56px;
+    color: #000;
+    transition: .3s;
+}
+
+.menu-link:hover {
+    color: #c5612e;
+
+}
+
+.menu-link::after {
+    content:'';
+    display: block;
+    width: 100%;
+    height: 5px;
+    border-radius: 40px;
+    transform-origin: center;
+    transform: scaleX(0);
+}
+
+.menu-link:hover:after {
+    transform: scaleX(1);
+}
+
+.hero {
+    padding-top: 60px;
+    padding-bottom: 210px;
+    background: url("../img/hero-bg.jpg") center / cover no-repeat;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90.16deg, #F0AD80 39.23%, rgba(250, 195, 158, 0) 95.33%);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-family: 'Nunito', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 144px;
+    line-height: 196px;
+    color: #FEF4F4;
+    margin-bottom: 26px;
+}
+
+.hero-title span{
+    font-family: 'Parisienne', serif;
+}
+
+.subtitle {
+    font-family: 'Quicksand', serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-bottom: 145px;
+}
+
+.btn {
+    display: block;
+    background: #D38753;
+    border-radius: 40px;
+    color: white;
+    width: 450px;
+    padding: 20px 20px 21px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 49px;
+    transition: background .3s;
+}
+
+.btn:hover {
+    background: #D17753;
+}
+
+
+/* advantages */
+.adv-list {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    padding: 50px;
+}
+/* .adv-item:nth-child(4) {
+    background-image: url("../img/панкейки.png");
+} */
+.adv-item p {
+    font-family: 'Quicksand', serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: #000000;
+}
+.adv-img {
+    width: 238px;
+    height: 238px;
+    border: 7px solid #827878;
+    border-radius: 50%;
+    padding: 40px;
+    padding-top: 37px;
+}
