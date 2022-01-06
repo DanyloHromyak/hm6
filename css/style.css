@@ -158,7 +158,6 @@ nav {
 /* advantages */
 .advantages ul {
     display: flex;
-    position: relative;
     justify-content: space-around;
     padding: 50px;
 }
